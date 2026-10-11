@@ -1,0 +1,127 @@
+.app {
+  min-height: 100vh;
+  padding: 35px 20px;
+}
+
+.student-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.student-container h1 {
+  text-align: center;
+  color: #482078;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #604a78;
+  margin-bottom: 30px;
+}
+
+.student-summary {
+  max-width: 250px;
+  margin: 0 auto 30px;
+  padding: 18px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(57, 26, 90, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #54278f;
+}
+
+.student-summary strong {
+  font-size: 28px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.student-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  border-top: 5px solid #8246c5;
+  box-shadow: 0 8px 25px rgba(57, 26, 90, 0.13);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow-wrap: anywhere;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(57, 26, 90, 0.2);
+}
+
+.student-avatar {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #7038b5, #b18ae8);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.student-card h2 {
+  text-align: center;
+  color: #54278f;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.student-card p {
+  color: #51445f;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.student-card p strong {
+  color: #45236b;
+}
+
+.status-badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 12px;
+  background: #e0f7e9;
+  color: #187844;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.message,
+.error-message {
+  max-width: 500px;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-radius: 12px;
+  color: #54278f;
+}
+
+.error-message {
+  color: #b42318;
+}
+
+@media (max-width: 600px) {
+  .student-container h1 {
+    font-size: 27px;
+  }
+
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+}
